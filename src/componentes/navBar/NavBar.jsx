@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "../../assets/images/logo/logo.jpg";
+import CartWidget from '../cartWidget/CartWidget';
 
 import "./NavBar.css";
 
@@ -8,6 +9,10 @@ export const Nav = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <a className="navbar-brand" to={""}><img className="Logo" src={Logo} alt="logo Empresa" /></a>
+                <div className='carrito' >
+                <CartWidget />
+                <span>5</span>
+                </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
