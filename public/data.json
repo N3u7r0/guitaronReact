@@ -1,0 +1,128 @@
+[
+    {
+        "id": "0",
+        "tipo": "Guitarra",
+        "marca": "ESP",
+        "nombre": " Horizon II",
+        "modelo": "Estrato",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L49516000002000-00-720x720.jpg",
+        "precio": "4399"
+    },
+    {
+        "id": "1",
+        "tipo": "Guitarra",
+        "marca": " Ibanez",
+        "nombre": "R9441F22G530E",
+        "modelo": "Rg",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L38208000001000-00-720x720.jpg",
+        "precio": "6499"
+    },
+    {
+        "id": "2",
+        "tipo": "Guitarra",
+        "marca": "Gibson",
+        "nombre": "Traditional Pro V",
+        "modelo": "Les paul",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L69587000002000-00-720x720.jpg",
+        "precio": "3099"
+    },
+    {
+        "id": "3",
+        "tipo": "Guitarra",
+        "marca": "Fender",
+        "nombre": " American Ultra",
+        "modelo": "Telecaster",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L69996000002000-00-720x720.jpg",
+        "precio": "2099"
+    },
+    {
+        "id": "4",
+        "tipo": "Guitarra",
+        "marca": "PRS",
+        "nombre": "Studio 10-Top",
+        "modelo": "Estrato",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L81866000008000-00-720x720.jpg",
+        "precio": "5090"
+    },
+    {
+        "id": "5",
+        "tipo": "Bajo",
+        "marca": "Ibanez",
+        "nombre": "SR5006 6-String",
+        "modelo": "Rg",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/J18891000001000-00-720x720.jpg",
+        "precio": "2599"
+    },
+    {
+        "id": "6",
+        "tipo": "Bajo",
+        "marca": "Yamaha",
+        "nombre": "TRBX305 5-String",
+        "modelo": "Estrato",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/J01917000004001-00-720x720.jpg",
+        "precio": "4299"
+    },
+    {
+        "id": "7",
+        "tipo": "Bajo",
+        "marca": "Fender",
+        "nombre": "Tony Franklin Fretless",
+        "modelo": "Precision Bass",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/516048000001000-00-720x720.jpg",
+        "precio": "2149"
+    },
+    {
+        "id": "8",
+        "tipo": "Bajo",
+        "marca": "Spector",
+        "nombre": "NS-5XL Quilted",
+        "modelo": "Estrato",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L71063000001000-00-720x720.jpg",
+        "precio": "6999"
+    },
+    {
+        "id": "9",
+        "tipo": "Bajo",
+        "marca": "Spector",
+        "nombre": "NS5",
+        "modelo": "Estrato",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L79969000001000-00-720x720.jpg",
+        "precio": "6449"
+    },
+    {
+        "id": "10",
+        "tipo": "Bateria",
+        "marca": "Roland",
+        "nombre": "TD-50KV2",
+        "modelo": "7 cuerpos",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L85156000000000-00-720x720.jpg",
+        "precio": "8399"
+    },
+    {
+        "id": "11",
+        "tipo": "Bateria",
+        "marca": "Dw drums",
+        "nombre": "Collector's Series",
+        "modelo": "7 cuerpos",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/J55419000000000-00-720x720.jpg",
+        "precio": "10329"
+    },
+    {
+        "id": "12",
+        "tipo": "Bateria",
+        "marca": "Tama",
+        "nombre": "STAR Factory Vault",
+        "modelo": "6 cuerpos",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/L96078000000001-00-720x720.jpg",
+        "precio": "8999"
+    },
+    {
+        "id": "13",
+        "tipo": "Bateria",
+        "marca": "Yamaha",
+        "nombre": " 50th Anniversary",
+        "modelo": "5 cuerpos",
+        "foto": "https://media.guitarcenter.com/is/image/MMGS7/J53748000001000-00-720x720.jpg",
+        "precio": "7199"
+    }
+]

@@ -11,8 +11,8 @@ export const Nav = () => {
             <div className="container-fluid">
                 <NavLink className="navbar-brand" to={"/"}><img className="Logo" src={Logo} alt="logo Empresa" /></NavLink>
                 <div className='carrito' >
-                <CartWidget />
-                <span>5</span>
+                    <CartWidget />
+                    <span>5</span>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
