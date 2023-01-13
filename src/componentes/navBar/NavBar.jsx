@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "../../assets/images/logo/logo.jpg";
-import CartWidget from '../cartWidget/CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
+import { NavLink } from 'react-router-dom';
 
 import "./NavBar.css";
 
@@ -8,7 +9,7 @@ export const Nav = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" to={""}><img className="Logo" src={Logo} alt="logo Empresa" /></a>
+                <NavLink className="navbar-brand" to={"/"}><img className="Logo" src={Logo} alt="logo Empresa" /></NavLink>
                 <div className='carrito' >
                 <CartWidget />
                 <span>5</span>
@@ -20,19 +21,19 @@ export const Nav = () => {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" to={"/"}>Home</a>
+                            <NavLink className="nav-link active" aria-current="page" to={"/"}>Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" to={""}>Nosotros</a>
+                            <NavLink className="nav-link" to={"/nosotros"}>Nosotros</NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <NavLink className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Productos</NavLink>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a className="dropdown-item" to={""}>Todos los productos</a></li>
-                                <li><a className="dropdown-item" to={""}>Guitarras</a></li>
-                                <li><a className="dropdown-item" to={""}>Bajos</a></li>
-                                <li><a className="dropdown-item" to={""}>Baterias</a></li>
+                                <li><NavLink className="dropdown-item" to={"/todos-los-productos"}>Todos los productos</NavLink></li>
+                                <li><NavLink className="dropdown-item" to={"/guitarra"}>Guitarras</NavLink></li>
+                                <li><NavLink className="dropdown-item" to={"/bajo"}>Bajos</NavLink></li>
+                                <li><NavLink className="dropdown-item" to={"/bateria"}>Baterias</NavLink></li>
                             </ul>
                         </li>
                     </ul>
