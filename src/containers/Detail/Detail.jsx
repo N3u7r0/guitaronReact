@@ -3,20 +3,21 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const Detail = () => {
-    const [item, setItem] = useState([])
+    const [item, setItem] = useState([]);
     const { id } = useParams();
-
     useEffect(() => {
-        const getData = () => {
+
+        setTimeout(() => {
             fetch('data.json')
                 .then(respuesta => respuesta.json())
                 .then(productosTodos => {
-                    console.log(productosTodos[id]);
                     setItem(productosTodos[id]);
-                }
-                );
-        }
-        getData();
+                    console.log("id del producto numero :" + id)
+                })
+                .catch(() => {
+                    console.log("error, el archivo del metodo fech no esta disponible.");
+                });
+        }, 2000);
     }, [id]);
 
     return (<div className="container">

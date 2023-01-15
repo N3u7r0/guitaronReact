@@ -5,20 +5,9 @@ import Item from "../Item/Item";
 
 const Productos = () => {
     const [items, setItems] = useState([]);
-    const {tipo} = useParams();
-
+    const { tipo } = useParams();
     useEffect(() => {
-        let categoria = "";
-        if (tipo === "guitarra") {
-            categoria = "Guitarra";
-        } else if (tipo === "bajo") {
-            categoria = "Bajo";
-        } else if (tipo === "bateria") {
-            categoria = "Bateria";
-        } else {
-            categoria = "todos";
-        }
-        const getData = () => {
+        setTimeout(() => {
             fetch('data.json')
                 .then(respuesta => respuesta.json())
                 .then(productosTodos => {
@@ -28,11 +17,24 @@ const Productos = () => {
                         const arr_productos = productosTodos.filter(producto => producto.tipo === categoria);
                         setItems(arr_productos);
                     }
+                })
+                .catch(() => {
+                    console.log("error, el archivo del metodo fech no esta disponible.");
                 });
-        }
-        getData();
+            let categoria = "";
+            if (tipo === "guitarra") {
+                categoria = "Guitarra";
+            } else if (tipo === "bajo") {
+                categoria = "Bajo";
+            } else if (tipo === "bateria") {
+                categoria = "Bateria";
+            } else {
+                categoria = "todos";
+            }
+            console.log("tipo de instrumento :" + tipo)
+        }, 2000);
     }, [tipo])
-    
+
     return (
         <div className="container">
             <div className="row">
