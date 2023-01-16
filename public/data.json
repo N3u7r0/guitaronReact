@@ -3,7 +3,7 @@
         "id": "0",
         "tipo": "Guitarra",
         "marca": "ESP",
-        "nombre": " Horizon II",
+        "nombre": " Horizon II 42-3334F",
         "modelo": "Estrato",
         "foto": "https://media.guitarcenter.com/is/image/MMGS7/L49516000002000-00-720x720.jpg",
         "precio": "4399"
@@ -30,7 +30,7 @@
         "id": "3",
         "tipo": "Guitarra",
         "marca": "Fender",
-        "nombre": " American Ultra",
+        "nombre": " American Ultra white",
         "modelo": "Telecaster",
         "foto": "https://media.guitarcenter.com/is/image/MMGS7/L69996000002000-00-720x720.jpg",
         "precio": "2099"
@@ -39,7 +39,7 @@
         "id": "4",
         "tipo": "Guitarra",
         "marca": "PRS",
-        "nombre": "Studio 10-Top",
+        "nombre": "Studio 10-Top viper",
         "modelo": "Estrato",
         "foto": "https://media.guitarcenter.com/is/image/MMGS7/L81866000008000-00-720x720.jpg",
         "precio": "5090"
@@ -84,7 +84,7 @@
         "id": "9",
         "tipo": "Bajo",
         "marca": "Spector",
-        "nombre": "NS5",
+        "nombre": "NS5- duncan edition",
         "modelo": "Estrato",
         "foto": "https://media.guitarcenter.com/is/image/MMGS7/L79969000001000-00-720x720.jpg",
         "precio": "6449"
@@ -93,7 +93,7 @@
         "id": "10",
         "tipo": "Bateria",
         "marca": "Roland",
-        "nombre": "TD-50KV2",
+        "nombre": "TD-50KV2 D3-223",
         "modelo": "7 cuerpos",
         "foto": "https://media.guitarcenter.com/is/image/MMGS7/L85156000000000-00-720x720.jpg",
         "precio": "8399"

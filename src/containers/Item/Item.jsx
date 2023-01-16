@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Item = ({ item }) => {
 
     return (
@@ -11,7 +12,9 @@ const Item = ({ item }) => {
                 <p className="card-text">{item.nombre}</p>
                 <p className="card-text">{item.modelo}</p>
                 <p className="card-text">{item.precio}</p>
-                <Link to={"/producto/" + item.id} className="btn btn-primary">Ver mas...</Link>
+                < div className="d-grid gap-2">
+                    <Link to={"/producto/" + item.id} className="btn btn-danger btn-lg">Ver mas...</Link>
+                </div>
             </div>
         </div>
     )

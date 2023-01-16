@@ -1,0 +1,17 @@
+.ad{
+    background-image: url("../../assets/images/adfoto/adfoto.jpg");
+    background-position: center;
+    background-repeat:initial;
+    background-size: cover;
+    height: 80px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.btn-outline-warning{
+    padding: 0px;
+    border: 0px;
+    justify-content: center;
+}
+

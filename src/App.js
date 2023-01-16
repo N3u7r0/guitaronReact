@@ -3,8 +3,8 @@ import NavBar from "./componentes/NavBar/NavBar"
 import Home from "./componentes/Home/Home";
 import Nosotros from "./componentes/Nosotros/Nosotros"
 import ItemListContainer from "./containers/ItemListContainer/ItemListContainer";
-import Detail from "./containers/Detail/Detail"
 import Footer from "./componentes/Footer/Footer"
+import ItemDetailContainer from "./containers/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/:tipo' element={<ItemListContainer />} />
-        <Route path="/producto/:id" element={<Detail />} />
+        <Route path="/producto/:id" element={<ItemDetailContainer />} />
       </Routes>
       <Footer />
     </>

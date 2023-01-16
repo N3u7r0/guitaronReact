@@ -1,0 +1,25 @@
+.col-md-3{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    ;
+}
+.card-body .btn-danger{
+    align-items: flex-end;
+    
+}
+.card{
+    box-shadow:-4px 7px 8px  rgba(155, 2, 33, 0.452)
+}
+
+.load{
+    align-content: center;
+    text-align: center;
+    font-size:50px;
+}

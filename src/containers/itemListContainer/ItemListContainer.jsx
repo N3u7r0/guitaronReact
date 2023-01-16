@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Item from "../Item/Item";
+import "./ItemListContainer.css";
 
 const Productos = () => {
     const [items, setItems] = useState([]);
@@ -31,19 +32,24 @@ const Productos = () => {
             } else {
                 categoria = "todos";
             }
-            console.log("tipo de instrumento :" + tipo)
+            console.log("tipo de producto :" + tipo)
         }, 2000);
     }, [tipo])
 
     return (
         <div className="container">
-            <div className="row">
-                {items.map(producto => (
-                    <div key={producto.id} className="col-md-3">
-                        <Item item={producto} />
+            {
+                Object.keys(items).length === 0
+                    ? <div className="load">CARGANDO...</div>
+                    :
+                    <div className="row">
+                        {items.map(producto => (
+                            <div key={producto.id} className="col-md-3">
+                                <Item item={producto} />
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
+            }
         </div>
     );
 }
