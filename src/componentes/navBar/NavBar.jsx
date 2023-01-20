@@ -2,11 +2,13 @@ import React from 'react';
 import Logo from "../../assets/images/logo/logo.jpg";
 import CartWidget from '../CartWidget/CartWidget';
 import { NavLink } from 'react-router-dom';
+import Ad from '../Ad/ad';
 
 import "./NavBar.css";
 
 export const Nav = () => {
     return (
+        <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <NavLink className="navbar-brand" to={"/"}><img className="Logo" src={Logo} alt="logo Empresa" /></NavLink>
@@ -40,6 +42,8 @@ export const Nav = () => {
                 </div>
             </div>
         </nav>
+        <Ad />
+        </div>
     )
 }
 

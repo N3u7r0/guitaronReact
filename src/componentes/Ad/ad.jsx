@@ -1,14 +1,34 @@
-import React from "react";
-import "./Ad.css";
 
+import { useState } from "react";
+import "./Ad.css";
+import Swal from "sweetalert2";
 
 const Ad = () => {
-    return (
-        <div className="ad">
-            <h4>Sorteo</h4>
-            <h6>Con la compra de cualquier guitarra electrica Ibanez, estas participando por un amplificador valvular Laney Iron-Man </h6>
-            <button type="button" className="btn btn-outline-warning">Mas info...</button>
+    const [adVisibility, setAdVisibility] = useState(true);
+    const handCloseAd = () => {
+        setAdVisibility(false);
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'El sorteo no esta disponible!',
+            footer: 'el evento ya fue sorteado el 20/01/2023, suerte para la proxima!!!'
             
+        })
+    }
+
+    return (
+        <div>
+            {
+                adVisibility === true
+                    ?
+                    <div className="ad">
+                        <h3>Sorteo</h3>
+                        <h6>Con la compra de cualquier guitarra Ibanez, estas participando por un amplificador valvular Laney Ironheard irt60h </h6>
+                        <button type="button" className="btn btn-outline-warning" onClick={handCloseAd}>Mas info...</button>
+                    </div>
+                    :
+                    null
+            }
         </div>
     )
 }
