@@ -1,9 +1,18 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import ItemCount from "../../componentes/ItemCount/ItemCount";
 import "./ItemDetailContainer.css";
 
 const ItemDetailContainer = () => {
+
+    const [quantity, setQuantity] = useState(0);
+
+    const funcionOnAdd = (cantidad) => {
+        console.log(`Se agrego la cantidad de productos ${cantidad}`);
+        setQuantity(cantidad)
+    }
+
     const [item, setItem] = useState([]);
     const { id } = useParams();
     useEffect(() => {
@@ -34,6 +43,16 @@ const ItemDetailContainer = () => {
                             <h2 className="card-text">{item.nombre}</h2>
                             <p className="card-text">{item.modelo}</p>
                             <p className="card-text">{item.precio}</p>
+                            {
+                                quantity === 0 ?
+                                    <ItemCount stock={20} initial={1} onAdd={funcionOnAdd} />
+                                    :
+                                    <button className="btn btn-danger p3">
+                                        <Link to="/cart">
+                                            ir a compras
+                                        </Link>
+                                    </button>
+                            }
                         </div>
                     </div>
             }
