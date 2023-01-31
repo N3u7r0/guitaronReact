@@ -5,11 +5,12 @@ import Nosotros from "./componentes/Nosotros/Nosotros"
 import ItemListContainer from "./containers/ItemListContainer/ItemListContainer";
 import Footer from "./componentes/Footer/Footer"
 import ItemDetailContainer from "./containers/ItemDetailContainer/ItemDetailContainer";
-import Cart from "./containers/Cart";
-
+import Cart from "./containers/Cart/Cart"
+import ShopProvider from "./containers/ShopProvider/shopProvider";
 function App() {
   return (
     <>
+    <ShopProvider>
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -20,6 +21,7 @@ function App() {
         <Route path="*" element={<h1>Ruta no encontrada T_T</h1>} />
       </Routes>
       <Footer />
+      </ShopProvider>
     </>
   );
 }

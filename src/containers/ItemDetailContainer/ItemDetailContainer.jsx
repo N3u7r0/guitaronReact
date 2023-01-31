@@ -1,16 +1,21 @@
 import React from "react";
+import { useContext } from "react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ItemCount from "../../componentes/ItemCount/ItemCount";
+import { Shop } from "../ShopProvider/shopProvider";
 import "./ItemDetailContainer.css";
 
 const ItemDetailContainer = () => {
 
     const [quantity, setQuantity] = useState(0);
 
+    const { addProduct } = useContext(Shop);
+
     const funcionOnAdd = (cantidad) => {
         console.log(`Se agrego la cantidad de productos ${cantidad}`);
         setQuantity(cantidad)
+        addProduct({ ...item, quantity: cantidad })
     }
 
     const [item, setItem] = useState([]);
